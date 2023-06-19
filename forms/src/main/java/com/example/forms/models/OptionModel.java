@@ -1,6 +1,7 @@
 package com.example.forms.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.annotation.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,5 +15,8 @@ public class OptionModel {
 
     @JsonProperty("option")
     private String option;
+
+    @JsonProperty("trueAnswerFlag")
+    private boolean trueAnswerFlag;
 
 }

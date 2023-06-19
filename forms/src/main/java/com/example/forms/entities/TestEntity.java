@@ -1,5 +1,6 @@
 package com.example.forms.entities;
 
+import com.example.forms.models.TestModel;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
@@ -20,4 +21,9 @@ public class TestEntity {
     @Column(name = "test_name")
     private String testName;
 
+
+
+    public TestEntity(TestModel testModel) {
+        this.testName = testModel.getTestName();
+    }
 }

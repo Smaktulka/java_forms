@@ -15,6 +15,6 @@ import java.util.Collection;
 public class QuestionModelCollection {
 
     @JsonProperty("questionModelCollection")
-    private Collection<QuestionModel> questionModelCollection;
+    private Collection<QuestionModel> questionCollection;
 
 }

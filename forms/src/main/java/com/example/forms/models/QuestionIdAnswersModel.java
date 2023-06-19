@@ -10,12 +10,13 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AnswerQuestionIdModel {
+public class QuestionIdAnswersModel {
 
-    @JsonProperty("modelId")
-    private Integer modelId;
+    @JsonProperty("questionId")
+    private Integer questionId;
 
     @JsonProperty("answerModelCollection")
     private AnswerModelCollection answerModelCollection;
+
 
 }

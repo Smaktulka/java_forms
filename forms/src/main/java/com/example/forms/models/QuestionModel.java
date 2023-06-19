@@ -1,12 +1,10 @@
 package com.example.forms.models;
 
 
+import com.example.forms.enums.QuestionType;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.annotation.Nullable;
 import lombok.*;
-
-import java.util.Collection;
 
 @Getter
 @Setter
@@ -17,11 +15,10 @@ public class QuestionModel {
     @JsonProperty("question")
     private String question;
 
+    @JsonProperty("questionType")
+    private QuestionType questionType;
+
     @JsonProperty("options")
     private OptionModelCollection options;
-
-    @Nullable
-    @JsonProperty("answers")
-    private AnswerModelCollection answers;
 
 }

@@ -22,7 +22,11 @@ public class AnswerEntity {
     private String option;
 
     @ManyToOne
-    @Column(name = "question_entity_id", nullable = false)
+    @Column(name = "user_id")
+    private UserEntity user_id;
+
+    @ManyToOne
+    @Column(name = "question_id", nullable = false)
     private QuestionEntity question;
 
     public AnswerEntity(AnswerModel answerModel, QuestionEntity questionEntity) {
